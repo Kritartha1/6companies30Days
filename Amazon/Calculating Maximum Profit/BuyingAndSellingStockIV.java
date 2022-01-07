@@ -3,6 +3,21 @@ class Solution {
         
         // code here
         if(K>=(N/2)){
+             //bcoz if k== atleast N/2..
+            //bcoz max transactions can always n/2..
+            //when case arises like:[1,3,2,6,5,9]..
+            //the above case accounts for maxtransaction..
+            //[1,3,4,5,6,2,9]
+            //1->6 is one transaction..6-1=5.
+            //2->9 is another transaction..9-2=7..
+            //so when we buy on some j<ith day and sell on ith day and buy on the same day and then sell it on some other day..
+            //then both (buying on some j<ith day(let say day t) ,selling on ith day)
+            //and then (selling on j>ith(letsay mth day) day while buying on ith day) 
+            //is same as buying on day t and selling on day m
+            //so these two transaction compiled to make a single transaction..
+            //so when selling(previous transaction) and buying day(next transaction) overlaps..
+            //then total transaction will always be less than n/2..
+            //i.e transactions decrease
             int maxProfit=0;
             for(int i=1;i<N;i++){
                 if(A[i]>A[i-1]){
