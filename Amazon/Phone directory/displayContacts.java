@@ -22,6 +22,14 @@ class Solution{
             }
         }
         distinctString.add(contact[k]);
+        //instead of doing the previous steps..
+        ///we could gave simply stored the contacts in a TreeSet..
+        //bcoz treeset will allow only the distinct contacts and in lexographically order
+        //TreeSet<String> distinctString=new TreeSet<>();
+        //for(String S: contact)
+        // {
+        //      distinctString.add(S);
+        // }
         
         n=distinctString.size();
          ArrayList<ArrayList<String>> ans=new ArrayList<>(m);
