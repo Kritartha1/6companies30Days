@@ -92,12 +92,12 @@ class Solution {
         //                 0 2 1
         //k=1
         
-        //after 1st stage: 2 2 1
-        //                 2 1 0
+        //after 1st stage: 2 2 2
+        //                 2 2 0
         //                 0 2 2
         //k=1
         
-        //so at the l last stage when grid[2][2] element became 2 , it was also added to the queue unnecessarily..so the loop will run for one more time..
+        //so at the last stage when grid[2][2] element became 2 , it was also added to the queue unnecessarily..so the loop will run one more time..
         //so, we have to subtract 1 from the ans..
         
     }
