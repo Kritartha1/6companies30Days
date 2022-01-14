@@ -30,7 +30,11 @@ class Solution
     static void printString(int L,int R,ArrayList <String> ans,String temp,int a[],String[] k){
         if(L<=R){
             
-            int f=2;//f will denote the index of the the string eg number 2="abc"..
+            int f=2;//f will denote the index of the the starting binary eqv of the string  
+            //eg number 2="abc"....so a=100, b=010, c=001..
+            //we will iterate from a, then get all it's combination....a=100=4(decimal)
+            //then iterate from b get all it's combinations andso on....b=100>>1=010=2(decimal)
+            //c=010>>1=001=1(decimal)
             
             int j=(a[L]==7||a[L]==9)?8:4;
             //j denotes the current binary representation of the number pressed 
@@ -48,6 +52,7 @@ class Solution
             if(j==8){
                 f=3;
             }
+        
             //if digit pressed is 7 or 9,
             //let's say digit 7="pqrs" pressed
             //so it can provide any of the 4 characters(among p ,q ,r and s)
