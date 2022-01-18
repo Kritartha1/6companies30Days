@@ -22,7 +22,7 @@ class Solution {
     }
     
     //recursive tree:
-    //initially we have temp="("..
+    //let's say :initially we have temp="("..
     //so closingBrackets=1..i.e no. of unclosed brackets=1..
     //opening brackets=1..i.e no of used opening brackets=1..
     //at temp="(", it can add two things to it in the next step..
