@@ -1,18 +1,19 @@
 class Solution {
     
-    Queue<Character> q;
+   
     
     public List<String> AllParenthesis(int n) 
     {
         // Write your code here
         //assumed that there n will be minimum 1
         
-        String temp="(";//initializing the 1st character of each string
+        String temp="";//initializing the 1st character of each string
         
         List<String> ans=new ArrayList<>();
         
-        int closingBrackets=1;//to keep a number of unclosed opening brackets
-        int openingBrackets=1;//to keep a count of the used opening brackets
+        int closingBrackets=0;//to keep a number of unclosed opening brackets..after each opening bracket is added ..this parameter increases..
+        //and when a closed bracket is used this parameter decreases
+        int openingBrackets=0;//to keep a count on the used opening brackets...after every open brackets used,this parameter increases
         
         solve(temp,n,openingBrackets,ans,closingBrackets);
         
@@ -51,7 +52,7 @@ class Solution {
             
         }
         //case2
-        if(openingBrackets<=n){
+        if(openingBrackets<n){
             solve(temp+'(',n,openingBrackets+1,ans,closingBrackets+1);
         }
         
