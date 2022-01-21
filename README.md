@@ -37,5 +37,42 @@ Day 6-10 : Company Name : Amazon Questions :
 12. Column name from a given column number
 13. Rotten Oranges -Multiple Repetitions
 14. Tree Burning 
-15. Delete N nodes after M nodes of a linked list 
+15. Delete N nodes after M nodes of a linked list
+
+Day 11-15 : Company Name : Microsoft  :
+1. Divide an array into two sets S1 and S2 such that the absolute difference between their sums is minimum and find the minimum difference
+2. Prerequisite Tasks (Similar to Question of Modern Park)
+3. Rotate by 90 degree
+4. Given a matrix of size r*c. Traverse the matrix in spiral form. 
+5. Stock span problem
+6. Possible Words From Phone Digits
+7. Unit Area of largest region of 1's 
+8. Connect Nodes at Same Level
+9. Count Number of SubTrees having given Sum 
+10. Stickler Thief (Similar to Alibaba and Thiefes Question) 
+11. Generate and print all binary numbers with decimal values from 1 to N.  
+12. Find all the unique quadruple from the given array that sums up to the given number.
+13. Given a Graph of V vertices and E edges and another edge(c - d), the task is to find if the given edge is a Bridge. i.e., removing the edge disconnects the graph.
+14. Given a destination D , find the minimum number of steps required to reach that destination.
+15. Find the order of characters in the alien language.
+
+Day 16-20 : Company Name :Adobe :
+
+1. Find a continuous sub-array which adds to a given number S.
+2. Find the length of the Longest Arithmetic Progression (LLAP) in it.
+3. Number of distinct Words with k maximum contiguous vowels(Joe and his Dictionary Problem)
+4. Partition Equal Subset Sum
+5. Total number of ways n can be expressed as sum of xth power of unique natural numbers
+6. Generate all combinations of well-formed(balanced) parentheses.
+7. Pots of Gold Game (Similar to Covid and Beds problem)
+8. ATOI 
+9. Smallest palindromic number greater than N using the same set of digits as in N.
+10. Elections
+11. String Amendment
+12. Leaders in Array
+13. Minimum operations to convert array A to B 
+14. Smallest range in K lists 
+15. Given two library versions of an executable: for example, “10.1.1.3” and “10.1.1.9” or “10” and “10.1”. Find out which one is more recent? Strings can be empty also.
+
+ 
 
