@@ -70,3 +70,40 @@ class Solution
         }
         
 }
+
+//Cleaner approach:
+
+class Solution
+{
+    //O((n^k).
+    //Function to find the largest number after k swaps.
+    
+    public static String findMaximumNum(String str, int k)
+    {
+            //code here.
+        
+        String ans=solve(str.toCharArray(),k,0);
+        return ans;
+    }
+    static String solve(char[] s,int k,int i){
+        if(i==s.length||k==0){
+            return new String(s);
+        }
+        int j=i+1;
+        String t=solve(s,k,i+1);
+        for(;j<s.length;j++){
+            char temp=s[i];
+            s[i]=s[j];
+            s[j]=temp;
+            String v=solve(s,k-1,i+1);
+            if(v.compareTo(t)>0){
+                t=v;
+            }
+            
+            temp=s[i];
+            s[i]=s[j];
+            s[j]=temp;
+        }
+        return t;
+    }
+}
