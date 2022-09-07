@@ -55,3 +55,47 @@ class Solution
         return false;
     }
 }
+
+
+//clean code:
+class Solution
+{
+    public int[][] dir={{-1,0},{0,1},{1,0},{0,-1}};
+    public boolean isWordExist(char[][] board, String word)
+    {
+        
+        int m=board.length;
+        int n=board[0].length;
+        // Code here
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(board[i][j]==word.charAt(0)&&dfs(board,i,j,word,new boolean[m][n],0)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    boolean isValid(char[][] board,int r,int c,boolean[][] vis){
+        return r>=0&&c>=0&&r<board.length&&c<board[0].length&&!vis[r][c];
+    }
+    boolean dfs(char[][] board,int i,int j,String word,boolean[][] vis,int idx){
+        if(idx==word.length()){
+            return true;
+        }
+        if(word.charAt(idx)!=board[i][j]){
+            return false;
+        }
+        vis[i][j]=true;
+
+        for(int k=0;k<4;k++){
+            int r=i+dir[k][0];
+            int c=j+dir[k][1];
+            if(isValid(board,r,c,vis)&&dfs(board,r,c,word,vis,idx+1)){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+}
